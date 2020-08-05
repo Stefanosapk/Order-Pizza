@@ -25,4 +25,11 @@ Route::delete('/pizzas/{id}', 'PizzaController@destroy');
 
 Auth::routes();
 
+//Disable Register Route
+//Auth::routes([
+//    'register' => false
+//]);
+
+
+
 Route::get('/home', 'HomeController@index')->name('home');
