@@ -7,6 +7,11 @@ use App\Pizza;
 
 class PizzaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['store', 'create']);
+    }
+
     public function index(){
         $pizzas = Pizza::all();
 //        $pizzas = Pizza::orderBy('name', 'desc')->get();
