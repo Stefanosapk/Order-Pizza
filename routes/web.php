@@ -23,8 +23,6 @@ Route::post('/pizzas', 'PizzaController@store')->name('pizzas.store');
 Route::get('/pizzas/{id}', 'PizzaController@show')->name('pizzas.show');
 Route::delete('/pizzas/{id}', 'PizzaController@destroy')->name('pizzas.destroy');
 
-//Auth::routes();
-
 //Disable Register Route
 Auth::routes([
     'register' => false
