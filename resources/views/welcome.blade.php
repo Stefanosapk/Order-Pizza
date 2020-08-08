@@ -11,6 +11,8 @@
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}">Register</a>
+                    @else
+                        <span>Registrations are closed!</span>
                     @endif
                 @endauth
             </div>
